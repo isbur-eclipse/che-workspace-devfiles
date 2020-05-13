@@ -1,0 +1,12 @@
+metadata:
+  name: ancestor
+components:
+  - mountSources: true
+    endpoints:
+      - name: nodejs
+        port: 3000
+    memoryLimit: 512Mi
+    type: dockerimage
+    image: 'isbur/ancestor:latest'
+    alias: nodejs
+apiVersion: 1.0.0
