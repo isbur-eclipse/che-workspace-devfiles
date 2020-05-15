@@ -10,3 +10,8 @@ components:
     image: 'isbur/ancestor:latest'
     alias: nodejs
 apiVersion: 1.0.0
+projects:
+  - name: ancestor
+    source:
+      type: git
+      location: 'https://github.com/isbur-eclipse/ancestor'
