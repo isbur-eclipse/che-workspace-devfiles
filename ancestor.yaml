@@ -1,5 +1,18 @@
 metadata:
   name: ancestor
+projects:
+  - name: ancestor
+    source:
+      location: 'https://github.com/isbur-eclipse/ancestor'
+      type: git
+      branch: master
+  - name: buildConfig-creator
+    source:
+      location: 'https://github.com/isbur-eclipse/buildConfig-creator'
+      type: git
+      branch: master
+attributes:
+  persistVolumes: 'false'
 components:
   - mountSources: true
     endpoints:
@@ -10,8 +23,3 @@ components:
     image: 'isbur/ancestor:latest'
     alias: nodejs
 apiVersion: 1.0.0
-projects:
-  - name: ancestor
-    source:
-      type: git
-      location: 'https://github.com/isbur-eclipse/ancestor'
